@@ -3,11 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="850" Width="1000">
     <Grid x:Name="LayoutRoot" Background="White">
-        <Button Content="Button" Height="50" HorizontalAlignment="Left" Margin="12,749,0,0" Name="button1" VerticalAlignment="Top" Width="50" Click="button1_Click" />
+        <Button Content="Button" Height="50" HorizontalAlignment="Left" Margin="12,626,0,0" Name="button1" VerticalAlignment="Top" Width="50" Click="button1_Click" />
         <Button Content="Open File" HorizontalAlignment="Left" Margin="12,12,0,729" Name="bOpenFileDialog" Width="70" Click="bOpenFileDialog_Click" />
         <Canvas HorizontalAlignment="Left" Margin="116,31,0,30" Name="canvas1" Width="750" ClipToBounds="True">
-            <Image Height="750" Name="image1" Stretch="None" Width="750" RenderTransformOrigin="0,0" />
+            <Image Height="769" Name="image1" Stretch="None" Width="767" RenderTransformOrigin="0,0" Canvas.Left="-17" Canvas.Top="-19" MouseLeftButtonDown="image1_MouseLeftButtonDown" MouseLeftButtonUp="image1_MouseLeftButtonUp" />
         </Canvas>
-        <Border BorderBrush="Silver" BorderThickness="1" Height="750" Name="border1" Canvas.Left="0" Canvas.Top="0" Width="750"></Border>
+        <Border BorderBrush="Silver" BorderThickness="1" Name="border1" Canvas.Left="0" Canvas.Top="0" Margin="107,20,101,21"></Border>
     </Grid>
 </Window>

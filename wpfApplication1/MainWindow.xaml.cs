@@ -23,6 +23,7 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void bOpenFileDialog_Click(object sender, RoutedEventArgs e)
@@ -48,8 +49,19 @@ namespace WpfApplication1
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            string GG = "Good Press";
-            Console.WriteLine (GG);
+            MessageBox.Show("Good Press");
+        }
+
+        private void image1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            CaptureMouse();
+            Point mouse =e.GetPosition(image1);
+            image1.RenderTransform = mouse;
+        }
+
+        private void image1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
